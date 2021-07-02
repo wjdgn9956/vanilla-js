@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* 기본 설정 */
+body{padding: 0; margin: 0; box-sizing: border-box;}
+* {font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+button { cursor: pointer;}
+
 .hidden {
     display: none;
 }
+
+img{
+    position:absolute;
+    left:0;
+    top:0;
+	max-width:100%;
+    min-width:100%;
+    max-height:1000px;
+    min-height:800px;
+    z-index:-5;
+    filter: brightness(60%);
+}
+
+body{ padding-top: 150px; text-align: center; color:white;}
+
+/* 로그인 폼 */
+#login-form { margin-bottom: 30px; margin-left: 60px;}
+#login-form input { width: 200px; height: 40px; text-align: center; border-radius: 15px;
+outline: none; border:0;}
+#login-form button { background-color: black; color:white; margin-left: 10px; border:0;}
+
+/* 시계 */
+#clock { background-color: black; width: 200px; margin:0 auto; height: 50px;
+line-height: 50px; border-radius: 20px; margin-bottom: 50px;}
+
+/* to-do list */
+#todo-form input{ width: 300px; margin: 0 auto; height: 30px; text-align: center;}
+
+#greeting { border-bottom: 1px solid white; width: 200px; margin: 0 auto;
+margin-bottom: 50px;}
+
+/* 명언 */
+#quote span{ display: block; margin: 10px 0;}
+
+/* 날씨 */
+.today_weather { position:absolute; top:50px; right:80px;}
+#weather span:first-child{ position:absolute; top:90px; right:150px; }
+#weather span:last-child{ position:absolute; top:90px; right:70px; }
+
+
+#todo-list {width: 200px; margin: 0 auto; margin-top: 30px; margin-bottom: 30px;}
+#todo-list li { float: left; width: 200px; padding: 5px 0;}
+#todo-list button{float: right; cursor: pointer;}
+#todo-list:after{clear:both; content: ""; display: block;}
